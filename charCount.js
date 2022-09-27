@@ -18,7 +18,7 @@ for(var i = 0; i < str.length; i++){
       obj[char]++;
     }   else {
       obj[char] = 1;
-  };
+  }
   //if the char is a number/letter AND is not in object, add it and set value to 1
 
   }
@@ -39,3 +39,20 @@ function isAlpaNumeric(char){
    }
    return true;
 }
+
+
+function charCount1(str){
+  let result = {};
+
+  for(let i = 0; i<=str.length; i++){
+    let char = str[i];
+    if (result[char] > 0){
+      result[char]++;
+    } else {
+      result[char] = 1
+    }
+
+
+    }
+      return result;
+  }
