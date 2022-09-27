@@ -44,14 +44,13 @@ function isAlpaNumeric(char){
 function charCount1(str){
   let result = {};
 
-  for(let i = 0; i<=str.length; i++){
+  for(let i = 0; i< str.length; i++){
     let char = str[i];
     if (result[char] > 0){
       result[char]++;
     } else {
       result[char] = 1
     }
-
 
     }
       return result;
